@@ -24,6 +24,7 @@
             ],
             "styles": [
               "src/styles.css"
+              "node_modules/bootstap/dist/css/bootstap.min.css"
             ],
             "scripts": []
           },
