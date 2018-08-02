@@ -1,0 +1,33 @@
+<h1>
+    Minions <small>Universal Studio</small>
+</h1>
+
+<hr>
+
+<div class="card-columns">
+
+    <div class="card animated fadeIn fast" *ngFor="let minion of minions; let i=index">
+        <img class="card-img-top" [src]="minion.img" [alt]="minion.nombre">
+        <div class="card-body">
+            <h4 class="card-title">{{minion.nombre}}</h4>
+            <p class="card-text text-justify">{{minion.bio}}</p>
+
+
+            <button type="button" class="btn btn-outline-primary btn-block" [routerLink]="['/minion',i]">
+                Ver más...
+            </button>
+
+            <!--a [routerLink]="['/minion',i]" class="btn btn-outline-primary">Ver más...</a-->
+
+            <!-- boton con metodo para mandar llamar a routes
+            <button (click)="verMinion(i)" type="button" class="btn btn-outline-primary btn-block">
+                Ver más...
+            </button>
+            -->
+
+        </div>
+    </div>
+
+
+
+</div>

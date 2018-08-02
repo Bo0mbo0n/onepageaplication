@@ -1,0 +1,23 @@
+<h1>{{minion.nombre | uppercase}}</h1>
+<hr>
+
+<div class="row">
+
+    <div class="col-md-4">
+        <img [src]="minion.img" [alt]="minion.nombre" class="img-fluid">
+
+
+        <a [routerLink]="['/minions']" class="btn btn-outline-primary">Regresar</a>
+
+
+    </div>
+
+    <div class="col-md-8 text-justify">
+        <p>
+            {{minion.bio}}
+        </p>
+
+    </div>
+
+
+</div>
