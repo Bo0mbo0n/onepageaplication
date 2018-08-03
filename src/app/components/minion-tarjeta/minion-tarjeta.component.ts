@@ -1,5 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-minion-tarjeta',
@@ -8,23 +7,9 @@ import { Router } from '@angular/router';
 })
 export class MinionTarjetaComponent implements OnInit {
 
-   @Input() minion: any = {};
-@Input() index:number;
+  constructor() { }
 
-constructor(private router:Router) {
-//console.log("constructor");
-}
   ngOnInit() {
-
-    
   }
-
-verMinion(){
-console.log(this.index);
-this.router.navigate(['/minion',this.index]);
-
-}
-
-
 
 }
