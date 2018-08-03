@@ -17,6 +17,7 @@ import { AboutComponent } from './components/about/about.component';
 import { MinionsComponent } from './components/minions/minions.component';
 import { MinionComponent } from './components/minion/minion.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
+import { MinionTarjetaComponent } from './components/minion-tarjeta/minion-tarjeta.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { BuscadorComponent } from './components/buscador/buscador.component';
     AboutComponent,
     MinionsComponent,
     MinionComponent,
-    BuscadorComponent
+    BuscadorComponent,
+    MinionTarjetaComponent
   ],
   imports: [
     BrowserModule,

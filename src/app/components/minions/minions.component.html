@@ -6,7 +6,7 @@
 
 <div class="card-columns">
 
-    <div class="card animated fadeIn fast" *ngFor="let minion of minions; let i=index">
+    <!--div class="card animated fadeIn fast" *ngFor="let minion of minions; let i=index">
         <img class="card-img-top" [src]="minion.img" [alt]="minion.nombre">
         <div class="card-body">
             <h4 class="card-title">{{minion.nombre}}</h4>
@@ -17,16 +17,17 @@
                 Ver más...
             </button>
 
-            <!--a [routerLink]="['/minion',i]" class="btn btn-outline-primary">Ver más...</a-->
+            <!a [routerLink]="['/minion',i]" class="btn btn-outline-primary">Ver más...</a-->
 
-            <!-- boton con metodo para mandar llamar a routes
+    <!-- boton con metodo para mandar llamar a routes
             <button (click)="verMinion(i)" type="button" class="btn btn-outline-primary btn-block">
                 Ver más...
             </button>
             -->
 
-        </div>
-    </div>
+    <!--/div>
+    </div-->
+    <app-minion-tarjeta [minion]="minion" [index]="i" *ngFor="let minion of minions; let i=index"></app-minion-tarjeta>
 
 
 
